@@ -1,0 +1,112 @@
+<style>
+table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 314px;
+    color: rgba(0, 255, 255, 0.3);
+    border-collapse: collapse;
+}
+
+td {
+    background: rgba(0, 0, 0, 0.67);
+}
+</style>
+<div style="position: relative;display: inline-block;box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.35);">
+    <img src="/img/food-small.jpg" style="display: block;"/>
+    <table>
+        <tr style="height:70px;">
+            <td style="width:100px;border-right:1px solid rgba(0,255,255,0.3);border-bottom:1px solid rgba(0,255,255,0.3);"></td>
+            <td style="width:200px;"></td>
+            <td style="border-left:1px solid rgba(0,255,255,0.3);border-bottom:1px solid rgba(0,255,255,0.3);"></td>
+        </tr>
+        <tr style="height:150px;">
+            <td></td>
+            <td style="background:none;border:1px solid rgba(0,255,255,0.3);"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="border-right:1px solid rgba(0,255,255,0.3);border-top:1px solid rgba(0,255,255,0.3);"></td>
+            <td></td>
+            <td style="border-left:1px solid rgba(0,255,255,0.3);border-top:1px solid rgba(0,255,255,0.3);"></td>
+        </tr>
+    </table>
+    <canvas id="arrows" width="400" height="314" style="position: absolute;top: 0;left: 0;"></canvas>
+</div>
+<script type="text/javascript">
+function line(fromX, fromY, toX, toY, caption, offset, angle, ctx) {
+    var arrowLength = 13;
+    var halfArrowWidth = 3;
+    var dx = fromX - toX;
+    var dy = fromY - toY;
+    var d = Math.sqrt(dx * dx + dy * dy);
+    var r;
+    if ( dx==0 ){
+        if (dy<0) r = Math.PI/2;
+        else {
+            r = - Math.PI/2;
+        }
+    }else {
+        if (dy == 0){
+            if (dx<0) r = 0;
+            else {
+                r = Math.PI;
+            }
+        }else {
+            r = Math.atan(dy / dx);
+        }
+    }
+
+    ctx.save();
+    ctx.translate(fromX, fromY);
+    ctx.rotate(r);
+    ctx.textBaseline = "middle";
+    ctx.font="15px Menlo";
+    var textMeasure = ctx.measureText(caption);
+
+    ctx.beginPath();
+    ctx.moveTo(arrowLength, 0);
+    ctx.lineTo(d - arrowLength, 0);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(arrowLength, halfArrowWidth);
+    ctx.lineTo(arrowLength, -halfArrowWidth);
+    ctx.lineTo(0, 0);
+    ctx.moveTo(d, 0);
+    ctx.lineTo(d - arrowLength, halfArrowWidth);
+    ctx.lineTo(d - arrowLength, -halfArrowWidth);
+    ctx.lineTo(d, 0);
+    ctx.lineWidth = 0;
+    ctx.fill();
+
+    //draw caption
+    ctx.save();
+    ctx.translate(d/2, - offset);
+    ctx.rotate(angle * Math.PI / 180);
+    ctx.fillText(caption, -textMeasure.width/2, 0);
+    ctx.restore();
+
+    ctx.restore();
+
+}
+function init() {
+    var c = document.getElementById("arrows");
+    var ctx = c.getContext("2d");
+    //ctx.globalAlpha = 1;
+    var top = 70;
+    var right = 100 + 200;
+    var bottom = 70 + 150;
+    var left = 70;
+    ctx.strokeStyle = "white";
+    ctx.fillStyle = "white";
+    ctx.lineWidth = 2;
+    line(0, 90,100,90, "left 100px", -13, 0, ctx);
+    line(0, 240,300,240, "right 300px", -13, 0, ctx);
+    line(120, 0, 120, 70, "top 70px", 43, -90, ctx);
+    line(320, 0, 320, 220, "bottom 220px", 13, 180, ctx);
+}
+window.addEventListener('load',init,false);
+</script>

@@ -3,6 +3,7 @@ html,body{
 	padding: 0;
 	height: 100%;
 	background: #efefef;
+	color: #000;
 }
 #wrapper {
 	min-height:100%;
@@ -19,6 +20,10 @@ html,body{
 	font-size:4em;
 	font-family: "Cochin", serif;
 	background: #ddd;
+}
+#header a{
+	text-decoration: none;
+	color: #000;
 }
 
 /**********************************
@@ -37,14 +42,42 @@ html,body{
 	padding: 0px;
     margin: 0px;
 }
+
+/**********************************
+              POST
+**********************************/
 #post {
 	width: 960px;
 	margin:auto;
 	font-family: sans-serif;
 }
+#post hr{
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+}
+.post-header{
+	padding: 30px 0 25px 0;
+}
 .post-title {
-	padding-top: 30px;
-	padding-bottom: 10px;
+	text-align: center;
+	margin: 10px 0;
+}
+.post-date {
+	color: #999;
+}
+.post-tags {
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+.post-categories {
+	position: relative;
+	display: inline-block;
+}
+.post-text {
+
 }
 
 /**********************************
@@ -91,6 +124,93 @@ html,body{
 	}
 }
 /**********************************
+               TAGS
+**********************************/
+.tags {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font: 12px/1.5 'PT Sans', serif;
+}
+.tags li{
+	display: block;
+	float: left;
+	margin: 0 0 0 17px;
+	padding: 0;
+}
+.tags a{
+	display: table-cell;
+	text-decoration: none;
+	color: black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	height: 21px;
+	background: #ddd;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	-webkit-transition: color 0.1s;
+}
+.tags a::before{
+	position: absolute;
+	left: -10px;
+	top: 0;
+	content: "";
+	height:1px;
+	border-right: 10px solid #ddd;
+	border-top:10px solid transparent;
+	border-bottom:10px solid transparent;
+}
+.tags a::after {
+	position: absolute;
+	left: -2px;
+	top: 7px;
+	width: 6px;
+	height: 6px;
+	background: white;
+	border-radius: 3px;
+	content: "";
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.31);
+}
+.tags a:hover {
+  	background-color: crimson;
+  	color: white;
+}
+.tags a:hover::before {
+	border-right-color: crimson;
+}
+
+/**********************************
+            CATEGORIES
+**********************************/
+.categories {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font: 12px/1.5 'PT Sans', serif;
+}
+.categories li{
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+.categories a{
+	display: table-cell;
+	text-decoration: none;
+	color: white;
+	border-radius: 3px;
+	height: 21px;
+	background: #AE7A2A;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+/**********************************
               OTHER
 **********************************/
 .center {
@@ -98,3 +218,6 @@ html,body{
 	margin: auto;
 	clear: both;
 }
+
+
+

@@ -9,6 +9,8 @@ tags: CSS
 ### Static
 The default position is static for any html element if no specified explicitly. A static positioned element is always positioned according to the normal flow of the page. Static positioned elements are not affected by the top, bottom, left and right properties.
 
+<!--more-->
+
 ### Fixed
 An element with a fixed position is positioned relative to the browser window, and will not move even if the window is scrolled.
 

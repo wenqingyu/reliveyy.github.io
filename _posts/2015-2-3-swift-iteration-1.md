@@ -15,6 +15,9 @@ for _ in 1...10 {}
 for (key, value) in someDictionary {}
 for (index, value) in enumerate(array) {}
 ```
+
+<!--more-->
+
 ### 如何让自己写的类在for...in这样的句式中使用呢？
 凡是能在这个句式中使用的类，都是实现了SequenceType Protocal的。
 

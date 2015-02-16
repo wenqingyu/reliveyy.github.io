@@ -32,8 +32,14 @@ layout: default
     <div class="post-text">
         {{ content }}
     </div>
+    {% if page.comments %}
+    <div>
+        <h1> Leave a comment below </h1>
+        {% include disqus.html %}
+    </div>
+    {% endif %}
 </div>
 
-{% include disqus.html %}
+
 
 

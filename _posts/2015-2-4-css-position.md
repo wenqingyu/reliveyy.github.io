@@ -1,7 +1,9 @@
 ---
 layout: post
 title: CSS position
-category: Notes
+category: 
+  - Learning Notes
+comments: true
 tags: CSS
 ---
 

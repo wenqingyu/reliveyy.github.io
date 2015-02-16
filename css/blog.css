@@ -116,6 +116,9 @@ html,body{
 .post-text {
 
 }
+.post-comments {
+	margin-bottom: 80px;
+}
 
 /**********************************
              FOOTER

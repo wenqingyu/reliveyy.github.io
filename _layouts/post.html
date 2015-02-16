@@ -33,9 +33,9 @@ layout: default
         {{ content }}
     </div>
     {% if page.comments %}
-    <div>
-        <h1> Leave a comment below </h1>
-        {% include disqus.html %}
+    <div class="post-comments">
+        <img style="height:150px;margin:auto;display:block;" src="/img/vintage-divide-scrolls.svg"/>
+        <div>{% include disqus.html %}</div>
     </div>
     {% endif %}
 </div>

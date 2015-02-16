@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Swift中的遍历（Iteration）#1
+comments: true
 ---
 
 ```swift
@@ -113,4 +114,3 @@ protocol Sequence {
 1. [WWDC 2014 Session Video: Advanced Swift](https://developer.apple.com/videos/wwdc/2014/#404)
 2. http://robots.thoughtbot.com/swift-sequences
 3. http://lillylabs.no/2014/09/30/make-iterable-swift-collection-type-sequencetype/
-

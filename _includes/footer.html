@@ -3,10 +3,15 @@
 		<div class="footer-column-inner-wrapper">
 			<h4>Contact</h4>
 			<ul>
-				<li>Twitter</li>
-				<li>Github</li>
-				<li>Google+</li>
-				<li>Facebook</li>
+				<style>
+					i {
+						width: 20px;
+					}
+				</style>
+				<li><i class="fa fa-twitter"></i> Twitter</li>
+				<li><i class="fa fa-github"></i> Github</li>
+				<li><i class="fa fa-google-plus"></i> Google+</li>
+				<li><i class="fa fa-facebook"></i> Facebook</li>
 			</ul>
 		</div>
 	</div>
@@ -14,10 +19,14 @@
 		<div class="footer-column-inner-wrapper">
 			<h4>Categories</h4>
 			<ul>
-				<li>学习笔记</li>
-				<li>Line 2</li>
-				<li>Line 3</li>
-				<li>Line 4</li>
+				<style type="text/css">
+					li {
+						text-transform: capitalize;
+					}
+				</style>
+				{% for c in site.categories %}
+				<li> {{ c | first }} </li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
@@ -25,18 +34,14 @@
 		<div class="footer-column-inner-wrapper">
 			<h4>Meta</h4>
 			<ul>
-				<li>Line 1</li>
-				<li>Line 2</li>
-				<li>Line 3</li>
-				<li>Line 4</li>
+				<li>RSS</li>
 			</ul>
 		</div>
 	</div>
 	<div class="footer-column">
 		<div class="footer-column-inner-wrapper">
 			<h4>About Me</h4>
-			<p> I am from China. English is my secondary language. I am infatuated with realizing my personal requirements by coding. I like new technology, elegant frameworks, natural programming language, and efficient algorithms.</p>
-			<p>Jekyll is AMAZING!</p>
+			<p style="font-family:Cochin, Sans-Serif;"> I am from China. English is my secondary language. I am infatuated with realizing my personal requirements by coding. I like new technology, elegant frameworks, natural programming language, and efficient algorithms.</p>
 		</div>
 	</div>
 	<div class="footer-row">

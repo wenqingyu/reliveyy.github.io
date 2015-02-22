@@ -4,7 +4,7 @@ title: Using Log4J2 with Hibernate 4.3.8
 category: 
   - Tricks
 comments: true
-tags: hibernate, log4j2
+tags: hibernate log4j2
 ---
 
 [The offical document](http://docs.jboss.org/hibernate/orm/4.3/topical/html/logging/Logging.html) said since version 4.0, Hiberante has used the JBoss Logging library for its logging needs. And log4j2 is one of jboss-logging supported back-ends. But in fact it does not work.

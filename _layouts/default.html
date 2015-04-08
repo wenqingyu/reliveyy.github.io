@@ -7,26 +7,25 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/blog.css" type="text/css" />
-    <link rel="stylesheet" href="/css/highlight.css" type="text/css" />
+    <link rel="stylesheet" href="/css/code.css" type="text/css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="/css/semantic.min.css" type="text/css" />-->
-    <!--<script src="/js/semantic.min.js" />-->
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-             <a href="/">ATLANTIS</a>
-        </div>
 
-        <div id="content">
-            {{content}}
-        </div>
+<header id="header">
+<span><a href="/">Home</a></span>
+</header>
 
-        <div id="footer">
-            {% include footer.html %}
-        </div>
-    </div>
+<main id="content">
+    {{content}}
+</main>
+
+<footer id="footer">
+<i class="fa fa-github"></i>
+<br/>
+<span>Powered by GitHub &copy; 2015</span>
+</footer>
 
 </body>
 </html>

@@ -4,6 +4,7 @@ title: Swift中的遍历（Iteration）#1
 category: 
   - Learning Notes
 comments: true
+tags: Swift
 ---
 
 ```swift
@@ -114,7 +115,6 @@ protocol Sequence {
 	func generate() -> GeneratorType
 }
 ```
-笔者认为Generator Protocol和Java中的Enumeration接口类似，这里不翻译Protocol是不希望再造一个“协议”的中文概念，其实Swift中的Protocol就是面向接口编程的概念。
 ### 参考资料
 1. [WWDC 2014 Session Video: Advanced Swift](https://developer.apple.com/videos/wwdc/2014/#404)
 2. http://robots.thoughtbot.com/swift-sequences

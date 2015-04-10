@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer i {
 	margin-top: 20px;
-	font-size: 6em;
+	font-size: 4em;
 }
 
 /**********************************
@@ -103,7 +103,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: #0d8ba1;
 	padding-top: 15px;
-	height: 47px;
 }
 .entry-header .meta {
 	font-family: Georgia, serif;

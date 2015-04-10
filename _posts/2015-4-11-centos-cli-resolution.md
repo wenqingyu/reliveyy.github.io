@@ -20,4 +20,4 @@ Then update grub in CentOS like this
 grub2-mkconfig -o "$(readlink /etc/grub2.cfg)"
 ```
 
-Finally, reboot the virtual machine, the resolution will be changed.
+Finally, reboot your system, the resolution will be changed.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pure & Simple
+title: Oplogo
 ---
 <div id="posts">
 	{% for post in site.posts %}
@@ -42,3 +42,12 @@ title: Pure & Simple
 	</div>
 	{% endfor %}
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#header').blurjs({
+			source: 'body',
+			radius: 30,
+			overlay: 'rgba(0, 0, 0, .2)'
+		});
+	});
+</script>

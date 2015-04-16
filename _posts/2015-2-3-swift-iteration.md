@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift中的遍历（Iteration）#1
+title: Swift中的遍历
 category: 
   - Learning Notes
 comments: true

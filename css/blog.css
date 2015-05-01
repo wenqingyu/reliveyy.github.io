@@ -4,7 +4,7 @@ html,body{
 	height: 100%;
 	background: url(/img/greyzz.png) #efefef;
 	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 a {
 	text-decoration: none;
@@ -124,136 +124,25 @@ h1, h2, h3, h4, h5, h6 {
 	height: 1px;
 	background-image: -webkit-linear-gradient(left, #eee, #ddd, #eee);
 }
-.post-header{
-	padding: 30px 0 25px 0;
+#post-header{
 }
-.post-title {
+#post-title {
 	text-align: center;
-	font-size: 2.3em;
-	margin: 10px 0;
 }
-.post-date {
+#post-subtitle {
 	font-family: Georgia, serif;
 	font-style: italic;
 	color: #777;
+	text-align: center;
+	margin-top: 0;
 }
-.post-tags {
-	margin-right: 20px;
-	position: relative;
-	display: inline-block;
-	float: right;
+#post-content {
+	width: 800px;
+	margin: auto;
 }
-.post-categories {
-	margin-left: 20px;
-	position: relative;
-	display: inline-block;
-}
-.post-text {
-	margin-left: 100px;
-	margin-right: 100px;
-}
-.post-comments {
+#post-comments {
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
-
-/**********************************
-               TAGS
-**********************************/
-.tags {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	font: 12px/1.5 'PT Sans', serif;
-	text-transform: capitalize;
-}
-.tags li{
-	display: block;
-	float: left;
-	margin: 0 0 0 17px;
-	padding: 0;
-}
-.tags a{
-	display: table-cell;
-	text-decoration: none;
-	color: black;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-	height: 21px;
-	background: #ddd;
-	padding-left: 10px;
-	padding-right: 10px;
-	vertical-align: middle;
-	position: relative;
-	-webkit-transition: color 0.1s;
-}
-.tags a::before{
-	position: absolute;
-	left: -10px;
-	top: 0;
-	content: "";
-	height:1px;
-	border-right: 10px solid #ddd;
-	border-top:10px solid transparent;
-	border-bottom:10px solid transparent;
-}
-.tags a::after {
-	position: absolute;
-	left: -2px;
-	top: 7px;
-	width: 6px;
-	height: 6px;
-	background: white;
-	border-radius: 3px;
-	content: "";
-	box-shadow: inset 0 1px rgba(0, 0, 0, 0.31);
-}
-.tags a:hover {
-  	background-color: crimson;
-  	color: white;
-}
-.tags a:hover::before {
-	border-right-color: crimson;
-}
-
-/**********************************
-            CATEGORIES
-**********************************/
-.categories {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	font: 12px/1.5 'PT Sans', serif;
-	text-transform: capitalize;
-}
-.categories li{
-	display: block;
-	float: left;
-	margin: 0 10px 0 0;
-	padding: 0;
-}
-.categories a{
-	display: table-cell;
-	text-decoration: none;
-	color: white;
-	border-radius: 3px;
-	height: 21px;
-	background: #0d8ba1;
-	padding-left: 10px;
-	padding-right: 10px;
-	vertical-align: middle;
-}
-
-
-
-/**********************************
-              OTHER
-**********************************/
-.center {
-	text-align: center;
-	margin: auto;
-	clear: both;
-}
-
 
 

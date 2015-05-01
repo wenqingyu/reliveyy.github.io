@@ -13,21 +13,26 @@ title: Oplogo
 			<div class="entry-header">
 				<a href="{{ post.url }}" class="title" >{{ post.title }}</a>
 				<div class="meta">
+
 					Posted in
+
 					{% for c in post.categories %}
-                	{% if forloop.index == post.categories.size %}
-                		and
-                	{% else %}
-                		{% if forloop.index != 1 %}
-                		,
+                		{% if forloop.index == post.categories.size and forloop.index > 1 %}
+                			and
+                		{% else %}
+                			{% if forloop.index != 1 %}
+                				,
+                			{% endif %}
                 		{% endif %}
-                	{% endif %}
-                	<span>
-                    	<a href="#"> {{c}}</a>
-                	</span>
-            		{% endfor %}
+                		<span>
+                    		<a href="#"> {{c}}</a>
+                		</span>
+            			{% endfor %}
+            		
             		at 
+					
 					<span>{{ post.date | date:"%F" }}</span>.
+				
 				</div>
 			</div>
 			<div class="entry-body">
@@ -42,12 +47,3 @@ title: Oplogo
 	</div>
 	{% endfor %}
 </div>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#header').blurjs({
-			source: 'body',
-			radius: 30,
-			overlay: 'rgba(0, 0, 0, .2)'
-		});
-	});
-</script>

@@ -52,7 +52,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer div.text a {
 	color: #444;
+	text-decoration: none;
 	border-bottom: #444 1px dotted;
+}
+#footer div.text a:hover {
+	color: #777;
+	text-decoration: none;
+	border-bottom: #777 1px dotted;
 }
 
 /**********************************

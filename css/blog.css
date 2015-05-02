@@ -43,20 +43,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 30px;
 }
 #footer {
-	color: #777;
+	color: #444;
 	text-align: center;
-	font-family: Georgia, serif;
-	font-style: italic;
-	background: url(/img/black_lozenge.png) #333
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: small;
+	background: url(/img/black_lozenge.png) #333;
+	padding: 40px 15px 40px;
 }
-#footer span {
-	display: inline-block;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-#footer i {
-	margin-top: 20px;
-	font-size: 4em;
+#footer div.text a {
+	color: #444;
+	border-bottom: #444 1px dotted;
 }
 
 /**********************************

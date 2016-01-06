@@ -12,28 +12,6 @@ title: Oplogo
 		<div class="entry-content">
 			<div class="entry-header">
 				<a href="{{ post.url }}" class="title" >{{ post.title }}</a>
-				<div class="meta">
-
-					Posted in
-
-					{% for c in post.categories %}
-                		{% if forloop.index == post.categories.size and forloop.index > 1 %}
-                			and
-                		{% else %}
-                			{% if forloop.index != 1 %}
-                				,
-                			{% endif %}
-                		{% endif %}
-                		<span>
-                    		<a href="#"> {{c}}</a>
-                		</span>
-            			{% endfor %}
-            		
-            		at 
-					
-					<span>{{ post.date | date:"%F" }}</span>.
-				
-				</div>
 			</div>
 			<div class="entry-body">
 				{% if post.content contains '<!--more-->' %}

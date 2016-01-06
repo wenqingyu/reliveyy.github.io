@@ -2,16 +2,13 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background: url(/img/greyzz.png) #efefef;
+	background: #fdfdfd;
 	color: #000;
 	font-family: Helvetica, Arial, sans-serif;
 }
 a {
 	text-decoration: none;
 	color: #0d8ba1;
-}
-a:hover {
-	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #0d8ba1;
@@ -81,20 +78,22 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-style: italic;
+	color: #777;
+	margin-top: 9px;
 }
 .left-date .day {
-	font-size: 3em;
-	color: #777;
+	font-size: 2.7em;
 }
 .left-date .month {
 	margin-top: 5px;
-	color: #777;
+	padding-top: 10px;
 	border-top: 1px solid #777;
 }
 /********************/
 .entry-content {
 	padding-left: 100px;
 	padding-right: 100px;
+	color: #444;
 }
 .entry-header {
 }
@@ -104,11 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: #0d8ba1;
 	padding-top: 15px;
-}
-.entry-header .meta {
-	font-family: Georgia, serif;
 	font-style: italic;
-	color: #777;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .entry-body {
 }

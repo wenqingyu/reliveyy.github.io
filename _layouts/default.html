@@ -1,52 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>{{ page.title }}</title>
+<html lang="en-us">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/blog.css" type="text/css" />
-    <link rel="stylesheet" href="/css/code.css" type="text/css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  {% include head.html %}
 
-    <!-- JS -->
-    <script src="/js/jquery.min.js"></script>
-    <script type="/js/blur.min.js"></script>
+  <body>
 
-</head>
-<body>
+    {% include sidebar.html %}
 
-<header id="header">
-<span><a href="/">Home</a></span>
-</header>
+    <div class="content container">
+      {{ content }}
+    </div>
 
-<main id="content">
-    {{content}}
-</main>
-
-<footer id="footer">
-
-<div>
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0;-webkit-filter:brightness(50%)" src="/img/by.svg" /></a>
-</div>
-
-<div class="text" style="width:500px;display:inline-block;margin-top:12px">
-
-The content of this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
-<a href="/public-key.txt">My GnuPG public Key</a> fingerprint is
-<code>A3D0:7D17:5206:4AC7:00D5:BE72:E370:4F4C:79E4:59EF</code>
-</div>
-
-<div class="text">
-
-Copyright 2015 - Yang Yang - Powered by <a href="https://www.github.com">GitHub <i class="fa fa-github"></i></a>
-
-</div>
-
-
-
-</footer>
-
-</body>
+  </body>
 </html>

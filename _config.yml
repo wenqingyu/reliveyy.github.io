@@ -1,3 +1,20 @@
-markdown:    redcarpet
-highlighter: pygments
-permalink:   /:title.html
+gems:            [jekyll-paginate, jekyll-gist]
+
+highlighter:     pygments
+permalink:       pretty
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+title:           Oplogo
+tagline:         'A personal blog'
+description:     'Java | Android'
+url:             https://reliveyy.github.io
+baseurl:         /
+
+author:
+  name:          'Yang Yang'
+  url:           https://twitter.com/bitdancer
+
+paginate:        5
+paginate_path:   'page:num'

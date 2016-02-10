@@ -8,7 +8,7 @@ kramdown:
 
 title:           Oplogo
 tagline:         'A personal blog'
-description:     'Java | Android'
+description:     'A personal blog tracking my technical exploration.'
 url:             https://reliveyy.github.io
 baseurl:         /
 
@@ -18,3 +18,8 @@ author:
 
 paginate:        5
 paginate_path:   'page:num'
+
+
+github:          'https://github.com/reliveyy'
+twitter:         'https://twitter.com/bitdancer'
+tumblr:          'https://pointliner.tumblr.com'

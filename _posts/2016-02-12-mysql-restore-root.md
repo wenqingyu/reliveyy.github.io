@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL 启动错误：The server quit without updating PID file
+title: MySQL 恢复误删的 root 用户
 categories: tricks
 comments: true
 tags: mysql

@@ -1,6 +1,5 @@
 gems:            [jekyll-paginate, jekyll-gist]
-
-# highlighter:     pygments
+：
 permalink:       pretty
 kramdown:
   input: GFM

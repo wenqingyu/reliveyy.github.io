@@ -1,5 +1,5 @@
 gems:            [jekyll-paginate, jekyll-gist]
-：
+
 permalink:       pretty
 kramdown:
   input: GFM

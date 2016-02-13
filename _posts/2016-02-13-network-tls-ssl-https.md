@@ -103,7 +103,7 @@ openssl enc -des -in data.txt -e -out data.txt.des
 openssl enc -des -in data.txt.des -d -out data.txt
 
 # 生成 8 个字节长的随机数据并用十六进制显示
-openssl rand -dex 8
+openssl rand -hex 8
 ```
 
 ## Java Keytool 使用简介

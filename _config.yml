@@ -22,3 +22,5 @@ paginate_path:   'page:num'
 github:          'https://github.com/reliveyy'
 twitter:         'https://twitter.com/bitdancer'
 tumblr:          'https://pointliner.tumblr.com'
+
+timezone:        'Asia/Shanghai'

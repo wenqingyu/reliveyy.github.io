@@ -4,6 +4,7 @@ title: Java Unsigned Byte
 categories: java
 comments: true
 tags: java
+date: 2016-02-14 16:00
 ---
 
 Java 中不存在无符号的基础数据类型，这个规定和 C 语言相比似乎简化了许多。然而在使用过程中却也有令人疑惑的地方。

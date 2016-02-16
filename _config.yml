@@ -8,7 +8,8 @@ kramdown:
 title:           Oplogo
 tagline:         'A personal blog'
 description:     'A personal blog tracking my technical exploration.'
-url:             https://reliveyy.github.io
+url:             https://oplogo.me
+enforce_ssl:     oplogo.me
 baseurl:         /
 
 author:

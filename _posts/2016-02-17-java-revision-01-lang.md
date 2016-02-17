@@ -263,8 +263,8 @@ System.out.println(a == b); // false
 
 ```java
 {
-	{int a = 1;}
-	a = 2; // 错，本作用域中没有定义变量 a
+    {int a = 1;}
+    a = 2; // 错，本作用域中没有定义变量 a
 }
 ```
 

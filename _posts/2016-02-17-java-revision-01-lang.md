@@ -250,7 +250,7 @@ System.out.println(a == b); // false
 ### 引用
 
 * 当一个实例没有任何**强引用**指向它的时候，它就会被标记上**可回收**
-* 强引用（Strong Reference）：默认，活到 JVM 关闭
+* 强引用（Strong Reference）：默认，活到 JVM 关闭，除非手动设置为 null
 * 软引用（Soft Reference）：内存吃紧时被回收，常用于缓存
 * 弱引用（Weak Reference）：垃圾回收线程扫描到就回收，常用于默默围观，可以有效避免循环引用
 * 虚引用（Phantom Reference）：最弱的引用，以至于 `get()` 永远返回 null，必须在创建的时候指定一个 ReferenceQueue，它的作用就是探测它指向的对象是否被回收了

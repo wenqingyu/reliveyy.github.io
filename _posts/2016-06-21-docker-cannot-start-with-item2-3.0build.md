@@ -17,7 +17,7 @@ date: 2016-06-21 14:39
     launchservicesd[85]: SecTaskLoadEntitlements failed error=22
     tccd[86808]: SecTaskLoadEntitlements failed error=22
 
-通过 Google 搜索发现这是[一个 iterm2 相关的问题](https://gitlab.com/gnachman/iterm2/issues/4447)，所以我猜测是最近升级了 iterm2 到 Build 3.0.2 导致了 Docker Quick Start Terminal 无法打开
+通过 Google 搜索发现这是[一个 iterm2 相关的问题](https://gitlab.com/gnachman/iterm2/issues/4447)，所以我猜测是最近升级了 iterm2 到 Build 3.0.2 导致了 Docker Quick Start Terminal 无法打开。
 
 ## 解决方法
 
